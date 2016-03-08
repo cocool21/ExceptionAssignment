@@ -10,6 +10,7 @@ public class ExceptionAssignment {
  
   a = input.nextInt();
   b = input.nextInt();
+  result=12;
  try{
   result = a / b;
  
@@ -17,5 +18,9 @@ public class ExceptionAssignment {
  }catch(ArithmeticException e){
 	 System.out.println("Divisor cannot be zero!");
  }
+ finally {
+	    System.out.println("finally block will execute.");
+	    System.out.println(result);
+	}
  }
 }
